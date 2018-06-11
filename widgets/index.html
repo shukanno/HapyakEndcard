@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Widget</title>
+        <link rel="stylesheet" type="text/css" href="static/css/widget.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/materialize/0.100.2.materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="//www.hapyak.com/css/generated/widget.css">
+    </head>
+    <body>
+        <div id="base-alert" class="row">
+            <div class="card light-blue">
+              <div class="card-content white-text">
+                <p id="base-alert-text"></p>
+              </div>
+            </div>
+        </div>
+        <div id="change-mode" class="btn-large waves-effect waves-light">
+            Configure
+        </div>
+
+        <div id="widget-body">
+            <div id="view-container">
+                <div id="endCardContainer">
+                    <ul class="center">
+                        <li class="titleText">UP NEXT... </li>
+                        <li class='circle'><div class="circle-inner" id='timer'>3</div></li>
+                    </ul>
+                    <ul class="center">
+                        <li class='thumbnail'><img src="" alt="" id='image0' id='title0'></li>
+                    </ul>
+                    <ul class="center">
+                        <li class='currentvideoTitle' id='title0'></li>
+                    </ul>
+                    <ul class="center">
+                        <li class='thumbnail'><img src="" alt="" id='image1'></li>
+                        <li class='thumbnail'><img src="" alt="" id='image2'></li>  
+                        <li class='thumbnail'><img src="" alt="" id='image3'></li>                           
+                    </ul>
+                    <ul class="center">
+                        <li class='videoTitle' id='title1'></li>
+                        <li class='videoTitle' id='title2'></li>  
+                        <li class='videoTitle' id='title3'></li>                             
+                    </ul>
+
+                </div>
+            </div>
+            <div id="edit-container">
+                <div class="row header">
+                    <h1>Configuration</h1>
+                </div>
+                <div class="row body">
+                    <div class="section">
+                        <div class="title row">
+                            <h2>THE NUMBER OF END CARD</h2>
+                        </div>
+                        <form name='mainForm' id='EndcardNum'>
+                        <div class="row settings-fields limit-margin-bottom">
+                                <input id="num1"
+                                    data-name="formPosition"
+                                    name="radio"
+                                    value="1"
+                                    type="radio"
+                                    data-input-data-type="string"
+                                    data-input-type="radio"
+                                    data-edit-id="form-position-left"
+                                    data-view-id="view-container"
+                                class="materialize-input config radio"/>
+                                <label for="num1">1</label>
+                        </div>
+                        <div class="row settings-fields limit-margin-bottom">
+                                <input id='num2'
+                                    data-name="formPosition"
+                                    name="radio"
+                                    value="2"
+                                    type="radio"
+                                    data-input-data-type="string"
+                                    data-input-type="radio"
+                                    data-edit-id="form-position-left"
+                                    data-view-id="view-container"
+                                class="materialize-input config radio"/>
+                            <label for="num2">2</label>
+                        </div>
+                        <div class="row settings-fields limit-margin-bottom">
+                                <input id='num3'
+                                    data-name="formPosition"
+                                    name="radio"
+                                    value="3"
+                                    type="radio"
+                                    data-input-data-type="string"
+                                    data-input-type="radio"
+                                    data-edit-id="form-position-left"
+                                    data-view-id="view-container"
+                                class="materialize-input config radio"/>
+                                <label for="num3">3</label>
+                        </div>
+                        <div class="row settings-fields limit-margin-bottom">
+                                <input id="num4"
+                                    data-name="formPosition"
+                                    name="radio"
+                                    value="4"
+                                    type="radio"
+                                    checked
+                                    data-input-data-type="string"
+                                    data-input-type="radio"
+                                    data-edit-id="form-position-left"
+                                    data-view-id="view-container"
+                                class="materialize-input config radio"/>
+                            <label for="num4">4</label>
+                        </div>
+                        </form>                        
+                    </div>
+                </div>
+                <div class="row footer">
+                    <div class="col s12 right-align">
+                        <a id="cancel-widget-config" class="waves-effect waves-grey btn-flat">
+                            CANCEL
+                        </a>
+                        <a id="save-widget-config" class="waves-effect waves-light btn">
+                            SAVE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="//www.hapyak.com/js/hapyak-iframe.js"></script>
+        <script type="text/javascript" src="//www.hapyak.com/js/hapyak.api.js"></script>
+        <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="vendor/materialize/0.100.2.materialize.min.js"></script>
+        <script type="text/javascript" src="vendor/jscolor/jscolor.min.js"></script>
+        <script type="text/javascript" src="//www.hapyak.com/static/js/widget/v1/base.js"></script>
+        <script type="text/javascript" src="//www.hapyak.com/static/js/widget/v1/widget_edit.js"></script>
+        <script type="text/javascript" src="static/js/widget_main.js"></script>
+    </body>
+</html>

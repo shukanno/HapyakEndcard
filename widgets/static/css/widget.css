@@ -1,0 +1,130 @@
+#endCardContainer{
+	background-color: rgba(0,0,0,0.53);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	padding-top: 3em;
+
+}
+
+.center{
+	list-style: none;
+	display: table;
+	width: 100%;
+	margin: 0;
+}
+
+.titleText {
+  	display: table-cell;
+	text-align: center;
+	font-size: 50px;
+	padding-left: 4em;
+	width: 100%;
+	color: #FFF;
+}
+
+.circle {
+	margin-right: 1em;
+	position: relative;
+    width: 120px;
+    height: 120px;
+    background: #333;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    font-size: 83px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    color: #fff;
+}
+
+.circle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 120px;
+    height: 120px;
+    background: #999;
+    transform-origin: right 60px;
+    z-index: 2;
+    animation: rotate-circle-left 3s linear forwards;
+}
+
+.circle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    width: 120px;
+    height: 120px;
+    background: #999;
+    transform-origin: left 60px;
+    z-index: 3;
+    animation: rotate-circle-right 3s linear forwards;
+}
+
+.circle .circle-inner {
+    position: absolute;
+    top: -40px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    padding-top: 38px;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+@keyframes rotate-circle-right {
+    0%   {
+        transform: rotate(0deg);
+        background: #999;
+    }
+    50%  {
+        transform: rotate(180deg);
+        background: #999;
+    }
+    50.01% {
+        transform: rotate(360deg);
+        background: #333;
+    }
+    100% {
+        transform: rotate(360deg);
+        background: #333;
+    }
+}
+
+@keyframes rotate-circle-left {
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(0deg); }
+    100% { transform: rotate(180deg); }
+}
+
+.thumbnail{
+  	display: table-cell;
+	text-align: center;
+	font-size: 50px;
+	color: #FFF;	
+}
+
+.thumbnail img{
+    width: 300px;
+}
+
+.videoTitle{
+    width: 300px;
+  	display: table-cell;
+	text-align: center;
+	font-size: 16px;
+	color: #FFF;		
+}
+
+.currentvideoTitle{
+  	display: table-cell;
+	text-align: center;
+	font-size: 24px;
+	width: 100%;
+	color: #FFF;		
+}
